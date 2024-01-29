@@ -1,7 +1,7 @@
 const greetings = ['Hi 👋', 'Helloooooooooooo 😘', 'Daii 😘', 'Oii 😘', 'Pesu daa 😡😤', 'Dai Dai Dai 🥹', 'enna da busy ha irukiya ???'];
 const section = document.getElementById('section');
 
-for (let i = 0; i < 3; i++) {
+for (let i = 0; i < 2; i++) {
     const randomIndex = Math.floor(Math.random() * greetings.length);
     const randomGreet = greetings[randomIndex];
     section.innerHTML += `
