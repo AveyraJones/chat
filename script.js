@@ -45,7 +45,11 @@ function response(input) {
     } else if (/(img|image|photo|selfie|pic|picture)/i.test(input)) {
         const pic = ['onnu than anupuven', 'paru da', 'pothuma'];
         replay = pic[Math.floor(Math.random() * pic.length)];
-    } else if (/(ur|unoda|unna|your|yours|u|you|nega|nee|aveyra|avey|jones|aveyra jones)/i.test(input)) {
+    } else if (/(good|nice|super)/i.test(input)) {
+        const cele = ['Thank you 🥳', 'Thank you da chlm 💘', '😘🥳🔥'];
+        replay = cele[Math.floor(Math.random() * cele.length)];
+    }
+    else if (/(ur|unoda|unna|your|yours|u|you|nega|nee|aveyra|avey|jones|aveyra jones)/i.test(input)) {
         if (/(name|peru)/i.test(input)) {
             if (/(short|chellama|shortly)/i.test(input)) {
                 const mynamesh = ['We are not that much close, call me Aveyra.', 'Aveyra neh kupadlameh', 'Aveyra 🙂'];
@@ -57,9 +61,6 @@ function response(input) {
         } else {
             replay = input + '?';
         }
-    } else if (/(good| super |nice|keep it up|beautiful)/i.test(input)) {
-        const cele = ['Thank you 🥳', 'Thank you da chlm 💘', '😘🥳🔥'];
-        replay = cele[Math.floor(Math.random() * cele.length)];
     } else {
         const undef = ['purila da 🥺', 'ozuga sollu daa 😤', 'purira mari sollu daaa 😡'];
         replay = undef[Math.floor(Math.random() * undef.length)];
@@ -91,7 +92,6 @@ function response(input) {
             </main>`;
         }, 700);
     }
-
 
 }
 
